@@ -1,10 +1,10 @@
-struct Boo {
-    damage: u8
-}
+const DAMAGE: i8 = 10;
+
+pub struct Boo;
 
 impl Boo {
 
-    fn attack(&self){
-        println!("My damage is {}", self.damage);
+    pub fn attack(&self){
+        println!("My damage is {}", DAMAGE);
     }
 }

@@ -1,23 +1,24 @@
-mod Boo;
-mod Koopa;
-mod Goomba;
-use Boo::Boo;
-use Koopa::Koopa;
-use Goomba::Goomba;
 
-pub struct EnemyFactory;
+mod boo;
+mod goomba;
+mod koopa;
+use boo::Boo;
+use koopa::Koopa;
+use goomba::Goomba;
 
-impl EnemyFactory {
+pub struct Factory;
 
-    fn create_boo(&self) -> Boo {
-        return Boo(damage : 10);
+impl Factory {
+
+    pub fn create_boo(&self) -> Boo {
+        return Boo{};
     }
 
-    fn create_koopa(&self) -> Koopa {
-        return Koopa(damage : 50);
+    pub fn create_koopa(&self) -> Koopa {
+        return Koopa{};
     }
 
-    fn create_goomba(&self) -> Goomba {
-        return Goomba(damage : 15);
+    pub fn create_goomba(&self) -> Goomba {
+        return Goomba{};
     }
 }

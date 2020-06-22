@@ -1,10 +1,10 @@
-struct Goomba{
-    damage: u8
-}
+const DAMAGE: i8 = 20;
+
+pub struct Goomba;
 
 impl Goomba {
 
-    fn attack(&self){
-        println!("My damage is {}", self.damage);
+    pub fn attack(&self){
+        println!("My damage is {}", DAMAGE);
     }
 }

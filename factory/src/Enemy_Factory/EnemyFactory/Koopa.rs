@@ -1,10 +1,10 @@
-struct Koopa {
-    damage: u8
-}
+const DAMAGE: i8 = 50;
+
+pub struct Koopa;
 
 impl Koopa {
 
-    fn attack(&self){
-        println!("My damage is {}", self.damage);
+    pub fn attack(&self){
+        println!("My damage is {}", DAMAGE);
     }
 }
