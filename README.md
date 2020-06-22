@@ -8,9 +8,9 @@ Cargo is the Rust package manager and build tool. To initialize a new Hello Worl
 
 This will automatically create a a new folder with all our Rust code inside of it and with a Cargo.toml file too. This last file has all the program configuration such as repository name, version or dependencies.
 
- --- Cargo.toml
- --- src
-      |--- main.rs
+ +-- Cargo.toml
+ +-- src
+      |-- main.rs
 
 ## Build your code
 
